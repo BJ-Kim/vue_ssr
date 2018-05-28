@@ -17,6 +17,10 @@ export default {
   data () {
     return {
     }
+  },
+  created () {
+    // router 전달 받을때 param 받아서 사용가능
+    console.log(this.$route.params)
   }
 }
 </script>

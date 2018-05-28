@@ -11,6 +11,7 @@ export function createRouter () {
     routes: [
       { path: '/', component: Home },
       { path: '/about', 
+        name: 'abt',
         component: About ,
         beforeEnter: (to, from, next) => {
           next()

@@ -3,6 +3,7 @@
     <p>main page????</p>
     <button v-on:click="storeTest">테스트</button>
     <button v-on:click="secondStore">2store</button>
+    <button v-on:click="pageMove">페이지이동</button>
   </div>
 </template>
 
@@ -27,6 +28,11 @@ export default {
       }
       this.$store.dispatch('HOHO', data)
         .then(() => console.log(this.$store.state))
+    },
+    pageMove () {
+      //this.$router.push('about')
+      //this.$router.push({path:'about'})
+      this.$router.push({name:'abt', params: { data: 123123 }})
     }
   }
 }
