@@ -1,4 +1,5 @@
 <template>
+  <!--<router-view></router-view>-->
   <div id="app">
     <p>
       <router-link to="/">GO TO MAIN</router-link>
